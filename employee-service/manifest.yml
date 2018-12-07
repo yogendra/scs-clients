@@ -1,0 +1,13 @@
+---
+applications:
+- name: employee-service
+  memory: 1024M
+  instances: 2
+  random-route: true
+  path: ./target/employee-service-0.0.1-SNAPSHOT.jar
+  services:
+    - config-server
+    - service-registry
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
+    TRUST_CERTS: api.run.haas-99.pez.pivotal.io

@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: employee-service
+  jpa:
+    hibernate:
+      ddl-auto: create
+  security:
+    user:
+      name: pas
+      password: pas
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+server:
+  port: 8081
+
+---
+spring:
+  profiles: cloud
+
+management:
+  cloudfoundry:
+    enabled: true
+    skip-ssl-validation: true
