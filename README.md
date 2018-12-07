@@ -10,5 +10,6 @@ An introduction to Spring Cloud Services using "Spring Cloud Finchley" running l
 - Spring Boot 2.x
 - Pivotal Spring Cloud Services 2.x
 
+
 <hr />
 Pas Apicella [papicella at pivotal.io] is an Advisory Platform Architect at Pivotal APJ 
